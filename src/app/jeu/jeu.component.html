@@ -1,0 +1,16 @@
+<app-recherche></app-recherche>
+
+<app-main></app-main>
+<h2>Les plus populaires</h2>
+<ul class="jeux">
+  <div class = "jeu-case col-xs-12 col-md-4 col-lg-3"*ngFor="let jeu of jeux">
+	<img src="../../assets/image/{{jeu.img}}.jpg" alt="{{jeu.name}}" class="img-thumbnail">
+	<div class ="jeu ">
+<h2>{{jeu.name}}</h2>
+
+<p>{{jeu.desc}} </p>
+
+<a href="#">{{jeu.note}} </a>
+	</div>
+  </div>
+</ul>

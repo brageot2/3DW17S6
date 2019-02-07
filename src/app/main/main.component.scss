@@ -1,0 +1,29 @@
+.app-jeu {
+
+float:left;
+}
+
+.app-tag{
+
+float:left;
+
+}
+  .search{
+  display:none;
+  }
+
+@media only screen and (max-width: 1200px){ 
+.app-tag{
+text-align:center;
+
+}
+
+ }
+ 
+ @media screen and (max-width: 768px) {
+
+  .search{
+  display:block;
+  margin-left:20px;
+  }
+}

@@ -1,0 +1,19 @@
+<div *ngIf="jeu">
+<br/>
+Détails du jeu :
+<br/>
+<h3> {{jeu.name}}</h3>
+<br/>
+<p> {{jeu.summary}} </p>
+<br/>
+
+<input type="submit" value="Ajouter le jeu" (click)="jouerJeu(game.id)"/> 
+<br/>
+<form>
+
+      <input placeholder="" id="note"/>
+
+    <input type="submit" value="Noter" (click)="noterJeu(game.id, note.value)"/> 
+	</form>
+
+</div>
