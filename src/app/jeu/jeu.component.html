@@ -6,11 +6,12 @@
   <div class = "jeu-case col-xs-12 col-md-4 col-lg-3"*ngFor="let jeu of jeux">
 	<img src="../../assets/image/{{jeu.img}}.jpg" alt="{{jeu.name}}" class="img-thumbnail">
 	<div class ="jeu ">
-<h2>{{jeu.name}}</h2>
 
-<p>{{jeu.desc}} </p>
+<a href="{{jeu.url}}">{{jeu.name}}</a>
 
-<a href="#">{{jeu.note}} </a>
+<!--<p>{{jeu.summary}} </p>-->
+
+
 	</div>
   </div>
 </ul>

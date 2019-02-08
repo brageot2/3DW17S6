@@ -10,9 +10,9 @@ import { IImage } from './IImage';
 export class SlideshowComponent implements OnInit {
 	
 imageUrls: (string | IImage)[] = [
-    { url: 'https://cdn.vox-cdn.com/uploads/chorus_image/image/56748793/dbohn_170625_1801_0018.0.0.jpg', caption: 'Jeu recommandé n°1', href: '#' },
-    { url: 'https://cdn.vox-cdn.com/uploads/chorus_asset/file/9278671/jbareham_170917_2000_0124.jpg', caption: 'Jeu recommandé n°2', href: '#'  },
-    { url: 'https://cdn.vox-cdn.com/uploads/chorus_image/image/56789263/akrales_170919_1976_0104.0.jpg', caption: 'Jeu recommandé n°3', href: '#'  },
+    { url: '../../assets/image/csgo.jpg', caption: 'Jeu recommandé n°1', href: 'https://blog.counter-strike.net/' },
+    { url: '../../assets/image/r6.jpg', caption: 'Jeu recommandé n°2', href: 'https://rainbow6.ubisoft.com/siege/fr-fr/home/'  },
+    { url: '../../assets/image/sw2.jpg', caption: 'Jeu recommandé n°3', href: 'https://www.ea.com/fr-fr/games/starwars/battlefront/battlefront-2'  },
 
   ];
   height: string = '400px';

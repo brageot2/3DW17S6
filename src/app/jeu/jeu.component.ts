@@ -3,6 +3,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { Location } from '@angular/common';
 import { Jeu } from '../jeu';
 import { JeuService }  from '../jeu.service';
+import { JEUX } from '../jeux';
 
 @Component({
   selector: 'app-jeu',
@@ -10,18 +11,12 @@ import { JeuService }  from '../jeu.service';
   styleUrls: ['./jeu.component.scss']
 })
 export class JeuComponent implements OnInit {
- @Input() jeu: Jeu;
+jeux = JEUX
 
   constructor(
-  private route: ActivatedRoute,
-  private jeuService: JeuService,
-  private location: Location
 ) {}
 ngOnInit(){
 
-  const id = +this.route.snapshot.paramMap.get('id');
-  this.jeuService.getJeux(String(id))
-    .subscribe(jeu => this.jeu = jeu);
 
 }
 
